@@ -23,5 +23,11 @@ namespace ChessMove
       Queen testQueen = new Queen(4,8);
       Assert.Equal(true, testQueen.CanAttack(5,8));
     }
+    [Fact]
+    public void CanAttack_ForMatchingDiag_true()
+    {
+      Queen testQueen = new Queen(1,1);
+      Assert.Equal(true, testQueen.CanAttack(8,8));
+    }
   }
 }

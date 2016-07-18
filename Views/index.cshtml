@@ -10,25 +10,24 @@
     <h2>Queen's Coordinates</h2>
     <div class="col-xs-6">
       <label for="queen-x">Queen X coordinate</label>
-      <input class="form-control coord-input" type="number" name="queen-x">
+      <input class="form-control coord-input" type="number" name="queen-x" min="1" max="8">
     </div>
     <div class="col-xs-6">
       <label for="queen-y">Queen Y coordinate</label>
-      <input class="form-control coord-input" type="number" name="queen-y">
+      <input class="form-control coord-input" type="number" name="queen-y" min="1" max="8">
     </div>
   </div>
 <div class="row row2">
   <h2>Other Piece's Coordinates</h2>
   <div class="col-xs-6">
     <label for="other-x">Other X coordinate</label>
-    <input class="form-control coord-input" type="number" name="other-x">
+    <input class="form-control coord-input" type="number" name="other-x" min="1" max="8">
   </div>
   <div class="col-xs-6">
     <label for="other-y">Other Y coordinate</label>
-    <input class="form-control coord-input" type="number" name="other-y">
+    <input class="form-control coord-input" type="number" name="other-y" min="1" max="8">
   </div>
 </div>
-
 
   <button type="submit">Submit Coordinates</button>
 </form>

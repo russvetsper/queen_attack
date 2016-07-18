@@ -1,1 +1,9 @@
 <h1>THANKS!</h1>
+
+
+@if (Model.GetAttackStatus() == true)
+{
+  <h2>The Queen can attack!</h2>
+} else{
+  <h2>The Queen cannot attack...</h2>
+}
