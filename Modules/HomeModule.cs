@@ -13,8 +13,8 @@ namespace ChessMove
       };
 
       Post["/coordinates_set"] = _ => {
-        
-        return View["coordinates_set.cshtml", **SOMETHING**]
+        Queen newQueen = new Queen(1,2);
+        return View["coordinates_set.cshtml", newQueen];
       };
     }
   }
