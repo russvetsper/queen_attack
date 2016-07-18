@@ -8,8 +8,20 @@ namespace ChessMove
     [Fact]
     public void CanAttack_ForMatchingX_true()
     {
-      Queen testQueen = new Queen(4,1);
-      Assert.Equal(true, testQueen.CanAttack(4, 5));
+      Queen testQueen = new Queen(1,1);
+      Assert.Equal(true, testQueen.CanAttack(1, 2));
+    }
+    [Fact]
+    public void CanAttack_ForNonMatchingX_false()
+    {
+      Queen testQueen = new Queen(1,1);
+      Assert.Equal(false, testQueen.CanAttack(2,3));
+    }
+    [Fact]
+    public void CanAttack_ForMatchingY_true()
+    {
+      Queen testQueen = new Queen(4,8);
+      Assert.Equal(true, testQueen.CanAttack(5,8));
     }
   }
 }

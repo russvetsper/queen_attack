@@ -31,11 +31,16 @@ namespace ChessMove.Objects
       _y_queen = newY;
     }
 
-    public bool CanAttack(int x, int y)
+    public bool CanAttack(int x_Other, int y_Other)
     {
-      int _x_other = x;
-      int _y_other = y;
-      return false;
+      if (this.GetX_Queen() == x_Other)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
