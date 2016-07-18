@@ -37,6 +37,10 @@ namespace ChessMove.Objects
       {
         return true;
       }
+      else if (this.GetY_Queen() == y_Other)
+      {
+        return true;
+      }
       else
       {
         return false;
