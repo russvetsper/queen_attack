@@ -13,6 +13,24 @@ namespace ChessMove.Objects
       _y_queen = y;
     }
 
+    public int GetX_Queen()
+    {
+      return _x_queen;
+    }
+    public void SetX_Queen(int newX)
+    {
+      _x_queen = newX;
+    }
+
+    public int GetY_Queen()
+    {
+      return _y_queen;
+    }
+    public void SetY_Queen(int newY)
+    {
+      _y_queen = newY;
+    }
+
     public bool CanAttack(int x, int y)
     {
       int _x_other = x;
